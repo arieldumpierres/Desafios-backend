@@ -46,40 +46,37 @@ pepe.addBook(nuevoLibro.librosDePepe);
 console.log(pepe.libros);
 pepe.getBooks();
 
-
 //Item 4
 const usuario = {
-    firstName: "Jose",
-    lastName : "Perez",
-    books: [{autor:'xx',titulo:'xxx'}],
-    pets: ['horse'],
-    fullName : function() {
-        console.log(`${this.firstName} ${this.lastName}`);
-    },
-    addPets: function() {
-        this.pets.push(newpet);
-      },
-    countPets: function() {
-        let length = this.pets.length;
-        console.log(length);
-      },
-    addBook: function() {
-        this.books.push(newbook);
-      },
-    getBooks: function() {
-        this.books.map(titles);
-        function titles(item) {
-          const arraytitles = [item.title];
-          return console.log(arraytitles);
-        }
-      }
+  firstName: "Jose",
+  lastName: "Perez",
+  books: [{ autor: "xx", titulo: "xxx" }],
+  pets: ["horse"],
+  fullName: function () {
+    console.log(`${this.firstName} ${this.lastName}`);
+  },
+  addPets: function () {
+    this.pets.push(newpet);
+  },
+  countPets: function () {
+    let length = this.pets.length;
+    console.log(length);
+  },
+  addBook: function () {
+    this.books.push(newbook);
+  },
+  getBooks: function () {
+    this.books.map(titles);
+    function titles(item) {
+        const arraytitles = [item.titulo];
+        return console.log(arraytitles);
+    }
+  },
+};
 
-
-  };
-
-  const JosesBooks = [{ autor: "x", titulo: "y" }];
-  const JosesPets = ["perro", "loro"];
-  usuario.fullName();
+const JosesBooks = [{ autor: "x", titulo: "y" }];
+const JosesPets = ["perro", "loro"];
+usuario.fullName();
 const newpet = "rat";
 const newbook = { autor: "nn", titulo: "el mio cid" };
 usuario.addPets(newpet.JosesPets);
