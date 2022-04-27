@@ -11,13 +11,25 @@ class Persona {
   }
 
   addMascotas(){
-   return this.mascotas.push()
+     this.mascotas.push(nuevamascota)
   }
 
   countMascotas (){
   let length =  this.mascotas.length;
+   console.log(length)
   }
   
+addBook (){
+     this.libros.push(nuevoLibro)
+}
+getBooks(){
+    this.libros.map(titulos)
+    function titulos(item){
+        const arraytitulos= [item.titulo]
+        return console.log(arraytitulos)
+    }
+}
+
 }
 
 const librosDePepe = [{autor:'x', titulo:'y'}]
@@ -27,6 +39,10 @@ const mascotasDePepe = ['perro','loro']
   
   pepe.getFullName();
   const nuevamascota= 'rata'
-  pepe.addMascotas(nuevamascota)
+  const nuevoLibro = {autor:'nn', titulo:'el mio cid'}
+  pepe.addMascotas(nuevamascota.mascotasDePepe)
   console.log(pepe.mascotas)
-
+pepe.countMascotas()
+pepe.addBook(nuevoLibro.librosDePepe)
+console.log(pepe.libros)
+pepe.getBooks()
