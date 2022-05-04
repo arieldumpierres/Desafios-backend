@@ -104,21 +104,21 @@ class Contenedor {
   
   deleteAll() {
    let archivo = this.archivo;
-   let borro = new Contenedor()
+   let borro = []
     fs.promises.readFile(`./${archivo}`, "utf-8")
     .then
     fs.promises.writeFile(
       `./Productos.txt`,
-      JSON.stringify([borro], null, 2)
+      JSON.stringify(borro, null, 2)
     )
     .catch((err) => {
-      console.log("No se pudo encontrar", err);
+      console.log("No se pudo encontrar archivo", err);
     });
   }
 }
 
 const cont = new Contenedor("Productos.txt");
-cont.save({ title: "Cacerola", price: 15000, thumbnail: "https://www.essen.com.ar/contenido/objetos/1/aquacacerolacuadrada30cm.jpg" });
+//cont.save({ title: "Cacerola", price: 15000, thumbnail: "https://www.essen.com.ar/contenido/objetos/1/aquacacerolacuadrada30cm.jpg" });
 //cont.getAll()
 //cont.getById(1)
 //cont.deleteById(6)
