@@ -78,6 +78,7 @@ class Contenedor {
       .catch((err) => {
         console.log("No se pudo encontrar", err);
       });
+      return archivo
   }
 
   deleteById(id) {
@@ -116,9 +117,10 @@ class Contenedor {
     });
   }
 }
+module.exports = Contenedor
 
 const cont = new Contenedor("Productos.txt");
-//cont.save({ title: "Cacerola", price: 15000, thumbnail: "https://www.essen.com.ar/contenido/objetos/1/aquacacerolacuadrada30cm.jpg" });
+cont.save({ title: "Cacerola", price: 15000, thumbnail: "https://www.essen.com.ar/contenido/objetos/1/aquacacerolacuadrada30cm.jpg" });
 //cont.getAll()
 //cont.getById(1)
 //cont.deleteById(6)
