@@ -1,0 +1,32 @@
+[
+  {
+    "name": "cacerola",
+    "price": "13000",
+    "desc": "cacerola cuadrada",
+    "photo": "noten",
+    "code": "1",
+    "stock": "3",
+    "pw": "fx88fx",
+    "id": 1,
+    "timestamp": 1655855348008
+  },
+  {
+    "name": "cacerola",
+    "price": "13000",
+    "desc": "cacerola cuadrada",
+    "photo": "noten",
+    "code": "1",
+    "stock": "3",
+    "id": 2,
+    "timestamp": 1655855352089
+  },
+  {
+    "name": "cacerola",
+    "price": "13000",
+    "desc": "cacerola redonda 30",
+    "photo": "noten",
+    "code": "1",
+    "stock": "2",
+    "id": 3
+  }
+]
