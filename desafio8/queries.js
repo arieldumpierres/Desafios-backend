@@ -20,25 +20,25 @@ db.mensajes.insertMany(mensajes)
 
 const productos = [
     {name: "cacerola cuadrada", price: 1700, 
-    stock: 5, photo: "none", code: "fhtdr", desc: "30 cm"},
+    stock: 5, photo: "none", code: "cccg", desc: "30 cm"},
     {name: "cacerola grande", price: 1280, 
-    stock: 5, photo: "none", code: "svgdr", desc: "diametro 30"},
+    stock: 5, photo: "none", code: "ccg", desc: "diametro 30"},
     {name: "Cacerola mediana", price: 4990, 
-    stock: 5, photo: "none", code: "crdavnts", desc: "diametro 25"},
+    stock: 5, photo: "none", code: "ccm", desc: "diametro 25"},
     {name: "Cacerola chica", price: 150, 
-    stock: 5, photo: "none", code: "dvl", desc: "diametro 15"},
+    stock: 5, photo: "none", code: "cch", desc: "diametro 15"},
     {name: "sarten grande", price: 1230, 
-    stock: 5, photo: "none", code: "nvcts1", desc: "diametro 30"},
+    stock: 5, photo: "none", code: "ssg", desc: "diametro 30"},
     {name: "sarten mediana", price: 2300, 
-    stock: 5, photo: "none", code: "mbznts", desc: "-"},
+    stock: 5, photo: "none", code: "ssm", desc: "-"},
     {name: "sarten chica", price: 120, 
-    stock: 5, photo: "none", code: "ldlfn", desc: "diametro 20"},
+    stock: 5, photo: "none", code: "ssch", desc: "diametro 20"},
     {name: "flip", price: 200, 
-    stock: 0, photo: "none", code: "gss", desc: "flipear"},
+    stock: 0, photo: "none", code: "flp", desc: "flipear"},
     {name: "bifera", price: 3000, 
-    stock: 5, photo: "none", code: "trr1", desc: "rectangualar"},
+    stock: 5, photo: "none", code: "bif", desc: "rectangualar"},
     {name: "budinera", price: 1000, 
-    stock: 5, photo: "none", code: "zr3am", desc: "Grande"},
+    stock: 5, photo: "none", code: "bud", desc: "Grande"},
 ]
 
 db.productos.insertMany(productos)
@@ -54,7 +54,7 @@ db.mensajes.count()
 //5
 //a
 db.productos.insertOne({name: "canasto freidor", price: 1300, 
-stock: 5, photo: "none", code: "zr8am", desc: "diametro 25"})
+stock: 5, photo: "none", code: "caf", desc: "diametro 25"})
 
 //b i
 db.productos.find({price: {$lt: 1000}})
