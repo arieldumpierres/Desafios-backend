@@ -80,7 +80,7 @@ app.use(session({
     mongoOptions: advancedOptions,
     ttl: 600
   }),
-    secret: 'fahrenheit',
+    secret: 'ariel',
     resave: true,
     saveUninitialized: true
 }))
