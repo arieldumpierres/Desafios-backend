@@ -34,11 +34,3 @@ export const calc = (args) => {
     }
     return x;
 }
-
-
-// process.on('message', nums => {
-//     console.log("arrancando")
-//  })
-
-//   process.send(calc(random(args.CANTIDAD)))
- 
